@@ -19,7 +19,6 @@ import Footer from "./Partials/Footer.vue";
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <p>Oke</p>
                 <slot />
 
             </div>

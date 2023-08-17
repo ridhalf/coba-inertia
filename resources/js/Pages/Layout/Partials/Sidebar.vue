@@ -18,6 +18,8 @@
                 <a><i class="fas fa-fw fa-tachometer-alt"></i><span>Dashboard</span></a></Link>
             <Link href="/about" class="nav-link">
                 <a><i class="fas fa-fw fa-tachometer-alt"></i><span>About</span></a></Link>
+            <Link href="/user" class="nav-link">
+                <a><i class="fas fa-fw fa-tachometer-alt"></i><span>User</span></a></Link>
         </li>
     </ul>
 </template>

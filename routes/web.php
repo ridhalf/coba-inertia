@@ -14,13 +14,15 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
-});
+Route::get('/',[\App\Http\Controllers\DashboardController::class,'index']);
 Route::get('/about',function (){
     return Inertia::render('About',[
         'nama'=>'Ridhal'
     ]);
 });
+Route::get('/user',[\App\Http\Controllers\UserController::class,'index'])->name('user.index');
+Route::put('/user',[\App\Http\Controllers\UserController::class,'update']);
+Route::get('/user/{id}/edit',[\App\Http\Controllers\UserController::class,'edit']);
+Route::post('/user',[\App\Http\Controllers\UserController::class,'store']);
 Route::get('/dashboard',[\App\Http\Controllers\DashboardController::class,'index']);
 Route::post('/dashboard',[\App\Http\Controllers\DashboardController::class,'store']);
